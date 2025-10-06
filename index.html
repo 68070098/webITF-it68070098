@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITF Banking - itf-it65xxxxxx</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h1>ITF Banking</h1>
+    <p>Student ID: itf-it65xxxxxx</p>
+  </nav>
+
+  <section id="overview">
+    <h2>Account Overview</h2>
+    <div class="info-box">
+      <label>Account Balance (บัญชี): </label>
+      <input type="number" id="accountBalance" placeholder="เช่น 5000"><br>
+      <label>Cash Balance (เงินสด): </label>
+      <input type="number" id="cashBalance" placeholder="เช่น 1000"><br>
+      <button onclick="setBalances()">Set Balances</button>
+    </div>
+  </section>
+
+  <section id="bank-operation">
+    <h2>Bank Operation</h2>
+    <input type="number" id="amount" placeholder="ใส่จำนวนเงิน">
+    <div class="btn-group">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+  </section>
+
+  <section id="converter">
+    <h2>Currency Converter (ยังไม่ต้องทำงาน)</h2>
+    <input type="number" id="convertAmount" placeholder="จำนวนเงิน">
+    <select id="currencyType">
+      <option value="THB">THB</option>
+      <option value="USD">USD</option>
+    </select>
+    <output id="convertResult">0</output>
+  </section>
+
+  <section id="history">
+    <h2>Transaction History</h2>
+    <textarea id="historyBox" rows="6" cols="50" readonly></textarea>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

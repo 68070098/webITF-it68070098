@@ -1,0 +1,54 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+}
+
+button {
+  margin: 8px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+h2 {
+  color: #333;
+}
